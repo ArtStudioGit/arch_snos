@@ -29,11 +29,11 @@ ascii_art = """"
   `:::::`::::::::;' /  / `:#
    ::::::`:::::;'  /  /   `#
 """
-print(colored(ascii_art, color='magenta'))
+print(colored(ascii_art, color='yellow'))
 
 ascii_banner = pyfiglet.figlet_format("archangel\nsnos")
-colored_banner = colored(ascii_banner, color='magenta')
-author = colored("@qwerty_orig", color='magenta')
+colored_banner = colored(ascii_banner, color='yellow')
+author = colored("@qwerty_orig\n", color='yellow')
 print(colored_banner)
 print(author)
 
@@ -128,7 +128,7 @@ def menu():
         "2. CH0C KAHAЛA\n"
         "3. CH0C БOTA\n"
     )
-    print(colored(men, color='yellow'))
+    print(colored(men, color='magenta'))
     choice = input("Введите номер: ")
     return choice
 def send_email(receiver, sender_email, sender_password, subject, body):
@@ -157,7 +157,7 @@ def main():
             "5. ПРЕМИУМ\n"
             "6. ВИРТУАЛЬНЫЙ НОМЕР"
         )
-        print(colored(men, color='yellow'))
+        print(colored(men, color='magenta'))
         comp_choice = input("Выберите способ: ")
         if comp_choice in ["1", "2", "3"]:
             username = input("@username: ")
@@ -210,7 +210,7 @@ def main():
             "3. ЦП\n"
             "4. ПРАЙС"
         )
-        print(colored(men, color='yellow'))
+        print(colored(men, color='magenta'))
         ch_choice = input("Выберите способ: ")
         if ch_choice in ["1", "2", "3", "4"]:
             channel_link = input("Ссылка на канал: ")
@@ -229,7 +229,7 @@ def main():
                     print(colored(f"Отправлено на {receiver} от {sender_email}!", 'green'))
                     time.sleep(5)
     elif choice == "3":
-        print(colored("1. ГЛАЗ БОГА", color='yellow'))
+        print(colored("1. ГЛАЗ БОГА", color='magenta'))
         bot_ch = input("Выберите: ")
         if bot_ch == "1":
             bot_user = input("@username: ")
